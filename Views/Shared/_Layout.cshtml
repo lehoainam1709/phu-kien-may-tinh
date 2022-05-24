@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - phu_kien_may_tinh</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="phukiens" asp-action="Index">PC Buildding</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">cửa hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">hỗ trợ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Liên Hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">kho cá nhân</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <section class="top-container">
+        <header class="showcase">
+            <h1>Your Web Presence</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ipsam! Nihil quo minima nulla atque!</p>
+            <a href="#" class="btn">Read More</a>
+        </header>
+        
+    </section>
+
+    <!-- Boxes Section -->
+    <section class="boxes">
+        <div class="box">
+            <i class="fas fa-chart-pie fa-4x"></i>
+            <h3>Analytics</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe fa-4x"></i>
+            <h3>Marketing</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-cog fa-4x"></i>
+            <h3>Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-users fa-4x"></i>
+            <h3>Support</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info">
+        <img src="https://cdn.tgdd.vn/hoi-dap/1353781/cach-khac-phuc-man-hinh-may-tinh-bi-nhieu-800x450.jpg" alt="">
+        <img src="https://cdn.tgdd.vn/Files/2018/09/26/1120348/vi-sao-nen-mua-man-hinh-3d-cho-may-tinh-pc--3.jpg" alt="">
+        <img src="https://vn-test-11.slatic.net/p/8378d32753aab90a0db83b674c1c38f0.jpg_800x800Q100.jpg" alt="">
+        <img src="https://hazoma.net/pictures/picfullsizes/2020/06/23/gha1592900889.jpg" alt="">
+        <img src="https://www.tncstore.vn/image/catalog/BAI%20VIET/th%C3%B4ng%20s%E1%BB%91%20b%C3%A0n%20ph%C3%ADm%20c%C6%A1/razer-blackwidow-x-chroma-group-1_1024x1024%20(1).jpg" alt="">
+        <img src="https://longbinh.com.vn/images/detailed/75/LCD_DELL-P2418HT_long_binh.jpg" alt="">
+        <img src="https://s.meta.com.vn/Data/image/2022/02/12/tai-nghe-gaming-chup-tai-headphone-gaming-microlab-g7-1.jpg" alt="">
+        <img src="https://anphat.com.vn/media/product/31909_1.jpg" alt="">
+    <div>
+        <div>
+            <h2>Your Business On The Web</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae alias reiciendis deleniti possimus nemo non repellendus?
+                Quae atque vero modi quidem! Autem cupiditate fugit doloribus ad amet, asperiores provident commodi.
+            </p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+</section>
+
+   
+    <!-- Footer -->
+    <footer>
+        <p>hn &copy; 2022</p>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
